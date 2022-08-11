@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="scripts.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
   <title>Character Builder</title>
 </head>
 
@@ -21,21 +21,19 @@
       </form>
       <form id="select-race">
         <select id="race">
-          <option selected>Dragonborn</option>
-          <option>Elf</option>
-          <option>Dwarf</option>
+          <option value="1" selected>Dragonborn</option>
+          <option value="2">Elf</option>
+          <option value="3">Dwarf</option>
         </select>
-        <button type="submit">Submit Race</button>
       </form>
     
       <div class="row" id="characterInfo">
         <form id="select-size">
           <select id="size">
-            <option value="0.75" selected>Small</option>
-            <option value="1">Meduim</option>
-            <option value="1.25">Large</option>
+            <option value="1" selected>Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
           </select>
-          <button type="submit">Submit Size</button>
         </form>
       </div>
 
@@ -45,7 +43,7 @@
          <label for="ranger">Ranger</label><br>
          <input type="radio" name="playerClass" value="Shaman" id="shaman">
          <label for="shaman">Shaman</label><br>
-         <input type="radio" name="playerClass value="Barbarian" id="barbarian" checked>
+         <input type="radio" name="playerClass" value="Barbarian" id="barbarian" checked>
          <label for="barbarian">Barbarian</label><br>
         </form>
       </div>
@@ -68,6 +66,13 @@
 
       </div>
       <div class="col-md-4" id="outputColumn">
+        <p>HP: <span class="hitPoints">____</span></p>
+        <p>HP: <span class="hitPoints">____</span></p>
+        <p>HP: <span class="hitPoints">____</span></p>
+        
+        <form id="submitForm">
+          <button type="submit">Submit Race</button>
+        </form>
 
       </div>
       <div class="col-md-4"  id="textColumn">
