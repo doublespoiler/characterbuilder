@@ -15,6 +15,10 @@
     </div>
 
     <div class="row" id="characterInfo">
+      <form id="input-name">
+        <label for="nameInput">Name:</label>
+        <input type="text" name="nameInput" id="nameInput">
+      </form>
       <form id="select-race">
         <select id="race">
           <option selected>Dragonborn</option>
@@ -37,19 +41,18 @@
 
       <div> 
         <form id="select-class">
-         <input type="radio" name="class" value="Ranger" id="ranger">
+         <input type="radio" name="playerClass" value="Ranger" id="ranger">
          <label for="ranger">Ranger</label><br>
-         <input type="radio" name="class" value="Shaman" id="shaman">
+         <input type="radio" name="playerClass" value="Shaman" id="shaman">
          <label for="shaman">Shaman</label><br>
-         <input type="radio" name="class" value="Barbarian" id="barbarian" checked>
+         <input type="radio" name="playerClass value="Barbarian" id="barbarian" checked>
          <label for="barbarian">Barbarian</label><br>
         </form>
       </div>
 
     <div class="row" id="builderSheet">
       <div class="col-md-4" id="attrColumn">
-        <form>
-          <!-- str, dex, etc -->
+        <form id="select-attr">
           <label for="strInput">Str:</label>
           <input type="number" name="strInput" id="strInput">
           <label for="dexInput">Dex</label>
@@ -57,15 +60,22 @@
           <label for="intInput">Int</label>
           <input type="number" name="intInput" id="intInput">
         </form>
+        <form id="skill-form">
+          <label for="skillInput">Skills:</label>
+          <textarea id="skillInput" name="skillInput" rows="4" cols="50"></textarea>
+
+        </form>
 
       </div>
       <div class="col-md-4" id="outputColumn">
 
       </div>
       <div class="col-md-4"  id="textColumn">
-        <form>
-          <label></label>
-          <input type="text" name="backstoryInput" id="backstoryInput">
+        <form id="misc-form">
+          <label for="backstoryInput">Backstory:</label>
+          <textarea id="backstoryInput" name="backstoryInput" rows="4" cols="50"></textarea>
+          <label for="inventoryInput"></label>
+          <textarea id="inventoryInput" name="inventoryInput" rows="4" cols="50"></textarea>
         </form>
 
       </div>
