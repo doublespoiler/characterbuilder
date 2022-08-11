@@ -3,9 +3,83 @@
 <head>
   <script src="scripts.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Character Builder</title>
 </head>
+
 <body>
-  
+  <div class="container">
+    <div class="row" id="header">
+      <div class="col-md-12" id="headerContent">
+        <h1>Welcome to the Character Builder!</h1>
+      </div>
+    </div>
+
+    <div class="row" id="characterInfo">
+      <form id="select-race">
+        <select id="race">
+          <option selected>Dragonborn</option>
+          <option>Elf</option>
+          <option>Dwarf</option>
+        </select>
+        <button type="submit">Submit Race</button>
+      </form>
+    
+      <div class="row" id="characterInfo">
+        <form id="select-size">
+          <select id="size">
+            <option value="0.75" selected>Small</option>
+            <option value="1">Meduim</option>
+            <option value="1.25">Large</option>
+          </select>
+          <button type="submit">Submit Size</button>
+        </form>
+      </div>
+
+      <div> 
+        <form id="select-class">
+         <input type="radio" name="class" value="Ranger" id="ranger">
+         <label for="ranger">Ranger</label><br>
+         <input type="radio" name="class" value="Shaman" id="shaman">
+         <label for="shaman">Shaman</label><br>
+         <input type="radio" name="class" value="Barbarian" id="barbarian" checked>
+         <label for="barbarian">Barbarian</label><br>
+        </form>
+      </div>
+
+    <div class="row" id="builderSheet">
+      <div class="col-md-4" id="attrColumn">
+        <form>
+          <!-- str, dex, etc -->
+          <label for="strInput">Str:</label>
+          <input type="number" name="strInput" id="strInput">
+          <label for="dexInput">Dex</label>
+          <input type="number" name="dexInput" id="dexInput">
+          <label for="intInput">Int</label>
+          <input type="number" name="intInput" id="intInput">
+        </form>
+
+      </div>
+      <div class="col-md-4" id="outputColumn">
+
+      </div>
+      <div class="col-md-4"  id="textColumn">
+        <form>
+          <label></label>
+          <input type="text" name="backstoryInput" id="backstoryInput">
+        </form>
+
+      </div>
+    </div>
+
+    <div class="row" id="footer">
+      <div class="col-md-12" id="footerContent">
+
+      </div>
+    </div>
+
+  </div>
+
+
 </body>
+
 </html>
